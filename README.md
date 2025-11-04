@@ -6,8 +6,7 @@ Minimal reproduction for a security report: demonstrates that `Model::unguard()`
 **Important:** This repository is for local reproduction only. Do **not** use this code in production.
 
 ## Included
-- `app/Providers/AppServiceProvider.php` — contains `Model::unguard()` (vulnerable line).
-- `.env.example` — configured for SQLite and local environment.
+- `app/Providers/AppServiceProvider.php` — contains `Model::unguard()` (vulnerable line)
 - `README.md` (this file).
 
 ## Vulnerable snippet
