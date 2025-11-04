@@ -87,7 +87,7 @@ sqlite3 database/database.sqlite "select id,email,email_verified_at from users w
 If `email_verified_at` contains the injected timestamp, the model-level mass-assignment primitive is demonstrated.
 
 ## Notes for maintainers / reviewers
-* This repo intentionally preserves Model::unguard() to reproduce the issue. The fix is to remove Model::unguard() (or restrict it to local/testing) and add $fillable / $guarded on models.
+* This repo intentionally preserves `Model::unguard()` to reproduce the issue. The fix is to remove `Model::unguard()` (or restrict it to local/testing) and add `$fillable` / `$guarded` on models.
 * The Livewire registration component in the full demo may or may not forward arbitrary fields from the client; this repo demonstrates the model primitive rather than a specific HTTP exploit path.
 
 ## Safety & disclosure
